@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 10:42:38 PM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTA6MzI6MzAgUE07MzM0Mg=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTE6MDc6MjMgUE07NDszNDU4"/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTIxOzEwOjQyOjM4IFBNOzE1OzM2MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Created by: ABERIN, Jinky Mae. LAURETA, Phia Marie. SALUDES, Maria Erika Flor.&quot;" newline="True"/>
+            <output expression="&quot;Welcome to flowgorithm! This machine will covert time to military format.&quot;" newline="True"/>
+            <output expression="&quot;So now, Let's begin the program.&quot;" newline="True"/>
+            <output expression="&quot;Do you want me to convert your time into military time? (Yes or No)&quot;" newline="True"/>
+            <declare name="hours, minutes, seconds" type="Integer" array="False" size=""/>
+            <declare name="midday" type="String" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;Yes&quot;">
+                <then>
+                    <output expression="&quot;Please enter what hour/s&quot;" newline="True"/>
+                    <input variable="hours"/>
+                </then>
+                <else>
+                    <breakpoint/>
+                </else>
+            </if>
+            <output expression="&quot;Please enter how many minute/s&quot;" newline="True"/>
+            <input variable="minutes"/>
+            <output expression="&quot;Please enter how many second/s&quot;" newline="True"/>
+            <input variable="seconds"/>
+            <output expression="&quot;Enter time of the day (AM or PM):&quot;" newline="True"/>
+            <input variable="midday"/>
+            <if expression="midday == &quot;PM&quot; &amp;&amp; hours != 12">
+                <then>
+                    <assign variable="hours" expression="hours + 12"/>
+                </then>
+                <else>
+                    <if expression="midday == &quot;AM&quot; &amp;&amp; hours == 12">
+                        <then>
+                            <assign variable="hours" expression="0"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="leading(hours) &amp; &quot;:&quot; &amp; leading(minutes) &amp; &quot;:&quot; &amp; leading(seconds)" newline="True"/>
+        </body>
+    </function>
+    <function name="leading" type="String" variable="time">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="time" type="String" array="False" size=""/>
+            <assign variable="time" expression="toString(x)"/>
+            <if expression="x &lt; 10">
+                <then>
+                    <assign variable="time" expression="&quot;0&quot;&amp;time"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

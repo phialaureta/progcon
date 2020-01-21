@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Phia"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 10:32:30 PM"/>
+        <attribute name="created" value="UGhpYTtQSElBTEFVUkVUQS1QQzsyMDE5LTExLTAxOzA1OjMwOjExIFBNOzI2NjM="/>
+        <attribute name="edited" value="UGhpYTtQSElBTEFVUkVUQS1QQzsyMDE5LTExLTAxOzA1OjQwOjI0IFBNOzE7Mjc3Ng=="/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTIxOzEwOjMyOjMwIFBNOzE5OzM2Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Created by: ABERIN, Jinky Mae. LAURETA, Phia Marie. SALUDES, Maria Erika Flor.&quot;" newline="True"/>
+            <output expression="&quot;Welcome to flowgorithm! This machine will tell you if the input is ODD or EVEN.&quot;" newline="True"/>
+            <output expression="&quot;So now, Let's begin the program.&quot;" newline="True"/>
+            <output expression="&quot;Do you want me to identify your input? (Yes or No)&quot;" newline="True"/>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;Yes&quot;">
+                <then>
+                    <output expression="&quot;What is your given number?&quot;" newline="True"/>
+                    <input variable="Number"/>
+                </then>
+                <else>
+                    <breakpoint/>
+                </else>
+            </if>
+            <declare name="OddorEven" type="Integer" array="False" size=""/>
+            <assign variable="OddorEven" expression="Number % 2"/>
+            <if expression="OddorEven == 0">
+                <then>
+                    <output expression="Number &amp; &quot; is considered as Even number.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="Number &amp; &quot; is considered as Odd number.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 10:39:28 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTM7MjAxOS0xMS0yOTsxMTowMTo0OCBBTTsyMTk3"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTM7MjAyMC0wMS0wNzswOTowMjo1OCBBTTsyOzIzMDI="/>
+        <attribute name="edited" value="WDtERVNLVE9QLUMzOTdQM0o7MjAyMC0wMS0xNDsxMTozNjowMyBhbTszOzI1MzM="/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTIxOzEwOjM5OjI4IFBNOzE5OzM2NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Created by: ABERIN, Jinky Mae. LAURETA, Phia Marie. SALUDES, Maria Erika Flor.&quot;" newline="True"/>
+            <output expression="&quot;Welcome to flowgorithm! This machine will convert your peso to dollar or vice versa.&quot;" newline="True"/>
+            <output expression="&quot;So now, Let's begin the program.&quot;" newline="True"/>
+            <output expression="&quot;Do you want to know the converted amount of your money to peso or dollar? (Yes or No)&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Yes&quot;">
+                <then>
+                    <declare name="Peso" type="Real" array="False" size=""/>
+                    <declare name="Dollar" type="Real" array="False" size=""/>
+                    <declare name="ConvertedPeso" type="Real" array="False" size=""/>
+                    <declare name="ConvertedDollar" type="Real" array="False" size=""/>
+                    <output expression="&quot;What currency do you have, Peso or Dollar?&quot;" newline="True"/>
+                    <declare name="Response" type="String" array="False" size=""/>
+                    <input variable="Response"/>
+                    <if expression="Response == &quot;Peso&quot;">
+                        <then>
+                            <output expression="&quot;What is the amount of Pesos to be converted?&quot;" newline="True"/>
+                            <input variable="Peso"/>
+                            <assign variable="Dollar" expression="0.020"/>
+                            <assign variable="ConvertedDollar" expression="Peso * Dollar"/>
+                            <output expression="Peso &amp; &quot; Peso&quot; &amp; &quot; when converted is &quot; &amp; ConvertedDollar &amp; &quot; Dollar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;What is the amount of Dollars to be converted?&quot;" newline="True"/>
+                            <input variable="Dollar"/>
+                            <assign variable="Peso" expression="50.60"/>
+                            <assign variable="ConvertedPeso" expression="Dollar * Peso"/>
+                            <output expression="Dollar &amp; &quot; Dollar&quot; &amp; &quot; when converted is &quot; &amp; ConvertedPeso &amp; &quot; Peso&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <breakpoint/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 10:36:14 PM"/>
+        <attribute name="created" value="am07Sk0tUEM7MjAyMC0wMS0wMzsxMTo1OToyOCBBTTsxODIx"/>
+        <attribute name="edited" value="am07Sk0tUEM7MjAyMC0wMS0wMzsxMjoxODowMSBQTTsxOzE5MzE="/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTIxOzEwOjM2OjE0IFBNOzI2OzM2MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Created by: ABERIN, Jinky Mae. LAURETA, Phia Marie. SALUDES, Maria Erika Flor.&quot;" newline="True"/>
+            <output expression="&quot;Welcome to flowgorithm! This machine will able to compute your given feet to inches.&quot;" newline="True"/>
+            <output expression="&quot;So now, Let's begin the program.&quot;" newline="True"/>
+            <output expression="&quot;Do you want me to convert your feet into inches? (Yes or No)&quot;" newline="True"/>
+            <declare name="Feet" type="Real" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;Yes&quot;">
+                <then>
+                    <output expression="&quot;What is the value of your given feet?&quot;" newline="True"/>
+                    <input variable="Feet"/>
+                </then>
+                <else>
+                    <breakpoint/>
+                </else>
+            </if>
+            <declare name="Inches" type="Real" array="False" size=""/>
+            <assign variable="Inches" expression="Feet * 12"/>
+            <output expression="Feet &amp; &quot; Feet&quot; &amp; &quot; when converted is &quot; &amp; Inches &amp; &quot; Inches&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

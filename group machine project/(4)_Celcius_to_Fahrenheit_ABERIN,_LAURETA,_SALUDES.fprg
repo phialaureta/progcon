@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 10:35:51 PM"/>
+        <attribute name="created" value="am07Sk0tUEM7MjAyMC0wMS0wMzsxMTozOTowMyBBTTsxODEy"/>
+        <attribute name="edited" value="am07Sk0tUEM7MjAyMC0wMS0wMzsxMTo1OToyMCBBTTsxOzE5MjE="/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTIxOzEwOjM1OjUxIFBNOzIxOzM2Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Created by: ABERIN, Jinky Mae. LAURETA, Phia Marie. SALUDES, Maria Erika Flor.&quot;" newline="True"/>
+            <output expression="&quot;Welcome to flowgorithm! This machine will convert your given degree celcius to fahrenheit.&quot;" newline="True"/>
+            <output expression="&quot;So now, Let's begin the program.&quot;" newline="True"/>
+            <output expression="&quot;Do you want me to convert your celcius into fehrenheit? (Yes or No)&quot;" newline="True"/>
+            <declare name="Celcius" type="Real" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;Yes&quot;">
+                <then>
+                    <output expression="&quot;What is your given degree celcius?&quot;" newline="True"/>
+                    <input variable="Celcius"/>
+                </then>
+                <else>
+                    <breakpoint/>
+                </else>
+            </if>
+            <declare name="Fahrenheit" type="Real" array="False" size=""/>
+            <assign variable="Fahrenheit" expression="(Celcius * 9/5) + 32"/>
+            <output expression="Celcius &amp; &quot; Celcius&quot; &amp; &quot; when converted is &quot; &amp; Fahrenheit &amp; &quot; Fahrenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

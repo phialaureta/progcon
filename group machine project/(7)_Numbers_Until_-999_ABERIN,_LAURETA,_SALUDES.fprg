@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 10:41:24 PM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTA6MDc6MzkgUE07MzM1Mw=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTY7MTI6MDg6NDAgQU07MjszNDQz"/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTIxOzEwOjQxOjI0IFBNOzE1OzM2Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Created by: ABERIN, Jinky Mae. LAURETA, Phia Marie. SALUDES, Maria Erika Flor.&quot;" newline="True"/>
+            <output expression="&quot;Welcome to flowgorithm! This machine would sum up your values until -999 is encountered.&quot;" newline="True"/>
+            <output expression="&quot;So now, Let's begin the program.&quot;" newline="True"/>
+            <output expression="&quot;Do you want help in adding your values? (Yes or No)&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Yes&quot;">
+                <then>
+                    <declare name="number, sum" type="Real" array="False" size=""/>
+                    <assign variable="number" expression="0"/>
+                    <assign variable="sum" expression="0"/>
+                    <output expression="&quot;Enter list of numbers (-999 to stop):&quot;" newline="True"/>
+                    <while expression="number != -999">
+                        <assign variable="sum" expression="sum + number"/>
+                        <input variable="number"/>
+                    </while>
+                    <output expression="&quot;The sum of all value entered is &quot; &amp; sum &amp; &quot;.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <breakpoint/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

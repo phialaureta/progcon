@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-21 10:43:54 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTE7MjAyMC0wMS0wNzswNzo0Njo0MyBBTTsyMTkx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTE7MjAyMC0wMS0wNzswODo1MzoyOCBBTTsxOzIzMDE="/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTIxOzEwOjQzOjU0IFBNOzIxOzM2Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Created by: ABERIN, Jinky Mae. LAURETA, Phia Marie. SALUDES, Maria Erika Flor.&quot;" newline="True"/>
+            <output expression="&quot;Welcome to flowgorithm! This machine will divide your two given numbers.&quot;" newline="True"/>
+            <output expression="&quot;So now, Let's begin the program.&quot;" newline="True"/>
+            <output expression="&quot;Do you want me to help you to divide your values? (Yes or No)&quot;" newline="True"/>
+            <declare name="Dividend" type="Real" array="False" size=""/>
+            <declare name="Divisor" type="Real" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;Yes&quot;">
+                <then>
+                    <output expression="&quot;Please input your dividend&quot;" newline="True"/>
+                    <input variable="dividend"/>
+                    <output expression="&quot;And divisor&quot;" newline="True"/>
+                    <input variable="divisor"/>
+                </then>
+                <else>
+                    <breakpoint/>
+                </else>
+            </if>
+            <declare name="Quotient" type="Real" array="False" size=""/>
+            <assign variable="Quotient" expression="Dividend / Divisor"/>
+            <output expression="&quot;The quotient for &quot; &amp; dividend &amp; &quot;/&quot; &amp; divisor &amp; &quot; is &quot; &amp; dividend/divisor &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
